@@ -8,3 +8,7 @@ body {
     background-size: cover; 
     background-position: center; 
 }
+.card-img-custom {
+    height: 200px;
+    object-fit: cover;
+}
