@@ -1,3 +1,7 @@
+<?php
+$current_page = basename($_SERVER['PHP_SELF']);
+$nav_classes = ($current_page == 'index.php') ? 'position-absolute w-100 z-3' : 'bg-dark';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,22 +16,12 @@
     <script src="../js/main.js" defer></script>
 </head>
 <body class="d-flex flex-column">
-    <header class="hero-bg min-vh-100 d-flex flex-column">
-        <nav class="d-flex justify-content-between align-items-center p-4">
-            <a class="fs-4 fw-bold text-white text-decoration-none" href="index.php">Artisan Nancy</a>
-            <ul class="list-unstyled d-flex gap-4 m-0">
-                <li><a href="index.php" class="fs-5 text-decoration-none text-white fw-semibold">Accueil</a></li>
-                <li><a href="services.php" class="fs-5 text-decoration-none text-white fw-semibold">Services</a></li>
-                <li><a href="contact.php" class="fs-5 text-decoration-none text-white fw-semibold">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="flex-grow-1 d-flex flex-column justify-content-center align-items-center text-center px-3">
-            <h1 class="display-4 fw-bold text-white mb-3">Dépannage Plomberie & Chauffage Rapide</h1>
-            <p class="fs-4 text-light mb-4">Intervention 7j/7 - Devis gratuit</p>
-            <div class="d-flex gap-3">
-                <a href="tel:+33600000000" class="btn btn-warning btn-lg fw-bold shadow">Appeler maintenant</a>
-                <a href="contact.php" class="btn btn-outline-light btn-lg shadow">Demander un devis</a>
-            </div>
-        </div>
-    </header>
-</body>
+    
+    <nav class="d-flex justify-content-between align-items-center p-4 <?php echo $nav_classes; ?>">
+        <a class="fs-4 fw-bold text-white text-decoration-none" href="index.php">Artisan Nancy</a>
+        <ul class="list-unstyled d-flex gap-4 m-0">
+            <li><a href="index.php" class="fs-5 text-decoration-none text-white fw-semibold">Accueil</a></li>
+            <li><a href="services.php" class="fs-5 text-decoration-none text-white fw-semibold">Services</a></li>
+            <li><a href="contact.php" class="fs-5 text-decoration-none text-white fw-semibold">Contact</a></li>
+        </ul>
+    </nav>
