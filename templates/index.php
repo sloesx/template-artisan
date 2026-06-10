@@ -7,9 +7,9 @@
                 <div class="card h-100 shadow-sm"> 
                     <img class="card-img-top card-img-custom" src="../assets/fuite.jpg" alt="Recherche de fuite">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-primary">Recherche de fuite</h5>
+                        <h5 class="card-title text-dark text-primary">Recherche de fuite</h5>
                         <p class="card-text mb-4">Intervention rapide pour localiser et réparer vos fuites d'eau avant que les dégâts ne s'aggravent.</p>
-                        <a href="services.php" class="btn mt-auto btn-outline-primary">En savoir plus</a>
+                        <a href="services.php" class="btn mt-auto btn-warning">En savoir plus</a>
                     </div>
                 </div> 
             </div>
@@ -17,9 +17,9 @@
                 <div class="card h-100 shadow-sm">
                     <img class="card-img-top card-img-custom" src="../assets/robinet.jpg" alt="Remplacement de robinet">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-primary">Remplacement de robinet</h5>
+                        <h5 class="card-title text-darktext-primary">Remplacement de robinet</h5>
                         <p class="card-text mb-4">Remplacement rapide et professionnel de vos robinets défectueux pour éviter les fuites et garantir un bon fonctionnement.</p>
-                        <a href="services.php" class="btn mt-auto btn-outline-primary">En savoir plus</a>
+                        <a href="services.php" class="btn mt-auto btn-warning">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -27,9 +27,9 @@
                 <div class="card h-100 shadow-sm">
                     <img class="card-img-top card-img-custom" src="../assets/wc.jpg" alt="Installation de sanitaires">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-primary">Installation de sanitaires</h5>
+                        <h5 class="card-title text-dark text-primary">Installation de sanitaires</h5>
                         <p class="card-text mb-4">Installation professionnelle de vos sanitaires pour garantir un bon fonctionnement et une esthétique irréprochable.</p>
-                        <a href="services.php" class="btn mt-auto btn-outline-primary">En savoir plus</a>
+                        <a href="services.php" class="btn mt-auto btn-warning">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -55,4 +55,5 @@
         </div>
     </section>
 </main>
+<?php include('footer.php'); ?>
 </html>

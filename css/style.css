@@ -12,3 +12,13 @@ body {
     height: 200px;
     object-fit: cover;
 }
+html {
+    overflow-y: scroll;
+}
+.phone-ico::before {
+    content: "\260E";
+    color: #FFD700;
+    margin-right: 0.5rem;
+    font-size: 1.1em;
+    vertical-align: middle;
+}
