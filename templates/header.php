@@ -1,5 +1,14 @@
 <?php
 $current_page = basename($_SERVER['PHP_SELF']);
+if ($current_page == 'index.php') {
+    $page_title = "Accueil - Artisan Nancy";
+} elseif ($current_page == 'services.php') {
+    $page_title = "Nos Services - Artisan Nancy";
+} elseif ($current_page == 'contact.php') {
+    $page_title = "Contactez-nous - Artisan Nancy";
+} else {
+    $page_title = "Artisan Nancy";
+}
 $nav_classes = ($current_page == 'index.php') ? 'position-absolute w-100 z-3' : 'bg-dark';
 ?>
 <!DOCTYPE html>
@@ -7,7 +16,7 @@ $nav_classes = ($current_page == 'index.php') ? 'position-absolute w-100 z-3' : 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Artisan</title>
+    <title><?php echo $page_title; ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
