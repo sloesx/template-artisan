@@ -8,6 +8,15 @@
     </div>
 </header>
 <main>
+    <?php if (isset($_GET['status']) && $_GET['status'] == 'success'): ?>
+        <div class="position-fixed start-50 translate-middle-x w-75" style="top: 100px; z-index: 9999;">
+            <div class="alert alert-success alert-dismissible fade show text-center shadow-lg" role="alert">
+                <h4 class="alert-heading fw-bold mb-2">✅ Message envoyé avec succès !</h4>
+                <p class="mb-0 fs-5">Merci pour votre message. Notre équipe d'artisans vous recontactera dans les plus brefs délais.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+        </div>
+    <?php endif; ?>
     <section class="container py-5">
         <h2 class="mb-5 text-center">Nos Interventions</h2>
         <div class="row g-4">

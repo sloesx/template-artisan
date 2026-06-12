@@ -1,4 +1,12 @@
-<?php include('header.php'); ?>
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])) {
+        header("Location: index.php?status=success");
+        exit();
+    }
+}
+include('header.php'); 
+?>
 <main class="container py-5">
     <div class="text-center mb-5">
         <h1 class="fw-bold">Contactez-nous</h1>
@@ -8,7 +16,6 @@
         <div class="col-md-6">
             <div class="bg-light p-4 rounded shadow-sm h-100">
                 <h3 class="mb-4">Nos Coordonnées</h3>
-                
                 <div class="mb-4">
                     <h5 class="fw-bold">🟡 ☎️ Urgences & Dépannages</h5>
                     <p class="fs-4 text-dark mb-0 fw-bold">07 73 85 31 86</p>
